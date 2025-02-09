@@ -32,14 +32,25 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png", 
+          "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./local/assets/notification_icon.png",
+          "color": "#ffffff",
+          "defaultChannel": "default",
+          "sounds": [
+            "./local/assets/notification_sound.wav",
+            "./local/assets/notification_sound_other.wav"
+          ],
+          "enableBackgroundRemoteNotifications": false
+        }
       ]
-     
-     
     ],
     "experiments": {
       "typedRoutes": true
@@ -58,6 +69,5 @@
     "updates": {
       "url": "https://u.expo.dev/6eb6fbed-5ec9-45c7-8083-501c9a44e931"
     }
-   
   }
 }
