@@ -4,18 +4,23 @@
     "slug": "my-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/notification-icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true
     },
+    "notification": {
+      "icon": "./assets/images/notification-icon.png",
+      "color": "#ffffff"
+    },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/notification-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.sarannithisshms.myapp"
     },
     "web": {
       "bundler": "metro",
@@ -27,15 +32,32 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/splash-icon.png", 
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
       ]
+     
+     
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "6eb6fbed-5ec9-45c7-8083-501c9a44e931"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/6eb6fbed-5ec9-45c7-8083-501c9a44e931"
     }
+   
   }
 }
