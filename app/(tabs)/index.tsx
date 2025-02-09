@@ -12,7 +12,7 @@ Notifications.setNotificationHandler({
   }),
 });
 
-export default function App() {
+export default function HomeScreen() {
   useEffect(() => {
     async function requestPermissions() {
       if (Platform.OS === "android" && Device.isDevice) {
